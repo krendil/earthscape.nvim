@@ -5,7 +5,7 @@ local earthscape = {}
 earthscape.normal = {
   a = { fg = colors.fg1, bg = colors.bg2, gui = "bold" },
   b = { fg = colors.fg1, bg = colors.bg3},
-  c = { fg = colors.comment, bg = colors.bg0},
+  c = { fg = colors.fg1, bg = colors.bg0},
 }
 
 earthscape.insert = {

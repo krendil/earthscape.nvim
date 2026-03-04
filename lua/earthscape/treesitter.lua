@@ -41,10 +41,10 @@ function M.apply()
   vim.api.nvim_set_hl(0, "@method.call", { fg = p.leaf })
   vim.api.nvim_set_hl(0, "@constructor", { fg = p.leaf })
 
-  vim.api.nvim_set_hl(0, "@variable", {})
-  vim.api.nvim_set_hl(0, "@variable.builtin", { fg = p.fg1 })
-  vim.api.nvim_set_hl(0, "@variable.parameter", { fg = p.fg1 })
-  vim.api.nvim_set_hl(0, "@variable.member", { fg = p.fg1 })
+  vim.api.nvim_set_hl(0, "@variable", { fg = p.fg1 })
+  vim.api.nvim_set_hl(0, "@variable.builtin", {})
+  vim.api.nvim_set_hl(0, "@variable.parameter", {})
+  vim.api.nvim_set_hl(0, "@variable.member", {})
 
   vim.api.nvim_set_hl(0, "@property", { fg = p.algae })
   vim.api.nvim_set_hl(0, "@field", { fg = p.fg1 })
@@ -86,7 +86,7 @@ function M.apply()
   -- Tags (HTML/XML: <div>, <Header>, <p>, <MyComponent>)
   vim.api.nvim_set_hl(0, "@tag", { fg = p.sand }) -- div, header, main, MyComponent
   vim.api.nvim_set_hl(0, "@tag.attribute", { fg = p.algae }) -- className, id, href, onClick
-  vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = p.uic1 }) -- < > </ />
+  vim.api.nvim_set_hl(0, "@tag.delimiter", { fg = p.comment }) -- < > </ />
 
   -- Attributes (@decorators, [attributes], #[derive])
   vim.api.nvim_set_hl(0, "@attribute", { fg = p.mushroom }) -- @Component, @override, [Serializable]
