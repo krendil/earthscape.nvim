@@ -124,6 +124,26 @@ function M.apply()
 
   -- Apply neotree theming
   require("earthscape.neotree").apply()
+
+  -- Apply terminal colours
+  vim.api.nvim_set_hl(0, "TermCursor", { fg = p.bg1,  bg = p.mushroom })
+  vim.g.terminal_color_0="#473c3c"
+  vim.g.terminal_color_1="#ff4143"
+  vim.g.terminal_color_2="#78a451"
+  vim.g.terminal_color_3="#d4ac6f"
+  vim.g.terminal_color_4="#8eab99"
+  vim.g.terminal_color_5="#bf8bb0"
+  vim.g.terminal_color_6="#cc896e"
+  vim.g.terminal_color_7="#e9ccc3"
+  vim.g.terminal_color_8="#90807f"
+  vim.g.terminal_color_9="#ff4143"
+  vim.g.terminal_color_10="#78a451"
+  vim.g.terminal_color_11="#d4ac6f"
+  vim.g.terminal_color_12="#8eab99"
+  vim.g.terminal_color_13="#bf8bb0"
+  vim.g.terminal_color_14="#cc896e"
+  vim.g.terminal_color_15="#e9ccc3"
+
 end
 
 return M 
