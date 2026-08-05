@@ -119,6 +119,13 @@ function M.apply()
   vim.api.nvim_set_hl(0, "WarningMsg", { fg = p.mushroom, bold = true }) -- Warning messages
   vim.api.nvim_set_hl(0, "ModeMsg", { fg = p.fg2 }) -- Mode messages
 
+  -- Debug markers and breakpoints
+  vim.api.nvim_set_hl(0, "DapBreakpoint", { fg = p.fruit })
+  vim.api.nvim_set_hl(0, "DapBreakpointCondition", { fg = p.mushroom })
+  vim.api.nvim_set_hl(0, "DapLogPoint", { fg = p.algae })
+  vim.api.nvim_set_hl(0, "DapStopped", { fg = p.leaf })
+  vim.api.nvim_set_hl(0, "DapBreakpointRejected", { fg = p.fg3 })
+
   -- Apply Treesitter theming
   require("earthscape.treesitter").apply()
 
